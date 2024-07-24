@@ -4,9 +4,9 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "pavan-remote-state"
+    bucket = "pa11-remote-state"
     key    = "eksctl"
     region = "us-east-1"
-    dynamodb_table = "pavan-locking"
+    dynamodb_table = "pa11-locking"
   }
 }
